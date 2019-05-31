@@ -1,1 +1,1 @@
-chisel/verilog/ofdm_demodulator.v
+../chisel/verilog/ofdm_demodulator.v
