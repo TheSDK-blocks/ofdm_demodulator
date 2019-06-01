@@ -25,7 +25,6 @@ class controller(verilog,thesdk):
         self.control_write.Data = Bundle()
         self.control_read = IO()
         self.control_read.Data = Bundle()
-        self.reference_sequence=np.array(PLPCsyn_long).reshape(-1,1).astype(complex)
         self.model='py';             #can be set externally, but is not propagated
         self.par= False              #By default, no parallel processing
         self.queue= []               #By default, no parallel processing
