@@ -7,7 +7,9 @@ for module in \
     ./chisel; do
     git submodule update --init $module
     cd ./$module
-    ./init_submodules.sh
+    if [ -f ./init_submodules.sh ]; then
+        ./init_submodules.sh
+    fi
     sbt publishLocal
     cd $DIR
 done
